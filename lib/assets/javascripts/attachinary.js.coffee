@@ -19,7 +19,7 @@
                   src="<%= $.cloudinary.url(files[i].public_id, { "version": files[i].version, "format": 'jpg', "crop": 'fill', "width": 75, "height": 75 }) %>"
                   alt="" width="75" height="75" />
               <% } %>
-              <a href="#" data-remove="<%= files[i].public_id %>"><%= image_tag 'delete.png' %></a>
+              <a href="#" data-remove="<%= files[i].public_id %>"><img src='/assets/delete.png'/></a>
             </li>
           <% } %>
         </ul>
